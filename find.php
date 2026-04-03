@@ -18,7 +18,7 @@ li {list-style: none;}
 <?php
 if (isset($_POST['submit']))
 {
-$db = pg_connect("host=database-rds port=5432 dbname=dbname user=username password=password");
+$db = pg_connect("host=database-1.cwzeerf2ugo3.eu-west-1.rds.amazonaws.com port=5432 dbname=postgres user=postrges password=admin_12345");
 $query = "select * from employee where id = '$_POST[id]'";
 $result = pg_query($db, $query);
 if (!$result)
