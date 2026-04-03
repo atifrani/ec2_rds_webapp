@@ -21,7 +21,7 @@
 <?php
 if (isset($_POST['submit'])) {
 
-    $db = pg_connect("host=database-1.cwzeerf2ugo3.eu-west-1.rds.amazonaws.com port=5432 dbname=postgres user=postgres password=admin_12345");
+    $db = pg_connect("host=endpoint port=5432 dbname=postgres user=postgres password=password");
 
     if (!$db) {
         die("Database connection failed.");
