@@ -22,7 +22,7 @@ li {listt-style: none;}
 </body>
 </html>
 <?php
-$db = pg_connect("host=database-rds port=5432 dbname=dbname user=user password=pasword");
+$db = pg_connect("host=database-1.cwzeerf2ugo3.eu-west-1.rds.amazonaws.com port=5432 dbname=postgres user=postrges password=admin_12345");
 $query = "INSERT INTO employee VALUES ('$_POST[id]','$_POST[fname]', '$_POST[lname]','$_POST[gender]','$_POST[age]', '$_POST[location]')";
 $result = pg_query($query); 
 ?>
